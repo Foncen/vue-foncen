@@ -8,7 +8,7 @@ export default function ajax (url, data = {}, type = 'GET') {
       Object.keys(data).forEach(key => {
         dataStr += key + '=' + dataStr[key] + '&'
       })
-      if (dataStr != '') {
+      if (dataStr !== '') {
         dataStr = dataStr.substring(0, dataStr.lastIndexOf('&'))
       }
       url = url + '?' + dataStr

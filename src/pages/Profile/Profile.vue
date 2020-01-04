@@ -95,10 +95,12 @@
 </template>
 
 <script>
+
+  /* eslint-disable */
   import HeaderTop from '../../components/HeaderTop/HeaderTop'
   export default {
     name: 'FooterGuide',
-    components:{
+    components: {
       HeaderTop
     }
   }
@@ -109,6 +111,7 @@
   .profile //我的
     width 100%
     overflow hidden
+
     .profile-number
       margin-top 45.5px
 

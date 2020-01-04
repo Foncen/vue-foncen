@@ -8,7 +8,7 @@
         <i class="iconfont icon-chaxun"></i>
       </span>
       <span class="header_login" slot="right">
-        <span class="header_login_text">登录|注册</span>
+        <span class="header_login_text" @click="$router.push('/login')">登录|注册</span>
       </span>
     </HeaderTop>
     <!-- 首页导航 -->
@@ -204,6 +204,7 @@
 </style>
 
 <script>
+  /* eslint-disable */
   import Swiper from 'swiper'
   import 'swiper/css/swiper.min.css'
 

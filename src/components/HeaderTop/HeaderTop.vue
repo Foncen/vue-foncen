@@ -25,7 +25,7 @@
   .header
     background-color #090406
     position fixed
-    z-index 100
+    z-index 205
     left 0
     top 0
     width 100%

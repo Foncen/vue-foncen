@@ -1,5 +1,6 @@
 import ajax from './ajax'
 
-export const reqAddress = (geohash) => ajax('/position/${geohash}')
-export const reqFoodsTypes = () => ajax('/index_category')
-export const reqShops = ({longitude,latitude})=>ajax('/shops',{longitude,latitude})
+const BASE_URL = '/api'
+export const reqAddress = (geohash) => ajax(BASE_URL + '/position/${geohash}')
+export const reqFoodsCategorys = () => ajax(BASE_URL + '/index_category')
+export const reqShops = ({longitude, latitude}) => ajax(BASE_URL + '/shops', {longitude, latitude})

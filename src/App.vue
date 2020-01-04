@@ -6,14 +6,18 @@
 </template>
 
 <script>
-import FooterGuide from './components/FooterGuide/FooterGuide';
+  import FooterGuide from './components/FooterGuide/FooterGuide'
 
+  export default {
+    components: {
+      FooterGuide
+    },
 
-export default {
-  components: {
-    FooterGuide
+    mounted () {
+      this.$store.dispatch('getAddress')
+    }
+
   }
-}
 
 </script>
 

@@ -24,7 +24,7 @@
 <style lang="stylus" rel="stylesheet/stylus">
 
   .search
-
+    overflow hidden
     .search_form
       clearFix()
       margin-top 45px

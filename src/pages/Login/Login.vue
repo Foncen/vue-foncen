@@ -55,6 +55,7 @@
 
 </div>
 <script>
+  /* eslint-disable */
   export default {
     name: 'Login'
   }
