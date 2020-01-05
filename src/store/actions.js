@@ -20,6 +20,7 @@ export default {
   },
 
   async getCategorys ({commit, state}) {
+    const geohash = state.latitude + ',' + state.longitude
     const result = await reqFoodsCategorys(geohash)
     if (result.code === 0) {
       const categorys = result.data
