@@ -24,7 +24,7 @@ export default {
     const result = await reqFoodsCategorys(geohash)
     if (result.code === 0) {
       const categorys = result.data
-      commit(RECEIVE_CATEGORYS)
+      commit(RECEIVE_CATEGORYS,{categorys})
     }
   },
 
